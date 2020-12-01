@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "675322558785",
+    "firebase_url": "https://expresseat-613de.firebaseio.com",
+    "project_id": "expresseat-613de",
+    "storage_bucket": "expresseat-613de.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:675322558785:android:6adfee43fbbc59b9d989c0",
+        "android_client_info": {
+          "package_name": "com.example.express_eat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "675322558785-cr3m3p45tl1jkrme4uda2lt4g93v88nv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.express_eat",
+            "certificate_hash": "0586c052179d86bc9793cedbf8959204ce76b8fb"
+          }
+        },
+        {
+          "client_id": "675322558785-egpe25h2mde4em7rjg3gskvfv9nbhpvo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDr0C3x10ntrKr0pzveZomZuZ7HQuFcT7E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "675322558785-egpe25h2mde4em7rjg3gskvfv9nbhpvo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    >
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/mainLayout"
+        android:layout_width="393dp"
+        android:layout_height="112dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/borderfood">
+
+            <ImageView
+                android:id="@+id/foodimage"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/foodname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/viga"
+                android:text="Name"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/foodimage"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/foodprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/viga"
+                android:text="Price"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/foodname"
+                app:layout_constraintTop_toBottomOf="@+id/foodname" />
+
+            <Button
+                android:id="@+id/addtocart"
+                android:layout_width="116dp"
+                android:layout_height="41dp"
+                android:background="@drawable/getstarted_button_design"
+                android:fontFamily="@font/viga"
+                android:text="Add To Cart"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.862"
+                app:layout_constraintStart_toEndOf="@+id/foodprice"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.766" />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>

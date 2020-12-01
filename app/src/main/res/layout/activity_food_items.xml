@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_food"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b19cd9"
+    android:backgroundTint="#CC393939"
+    android:backgroundTintMode="multiply">
+
+    <Button
+        android:id="@+id/btn_food_one"
+        android:layout_width="165dp"
+        android:layout_height="56dp"
+        android:background="@drawable/edit_round_two"
+        android:fontFamily="@font/viga"
+        android:text="Burgers"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.198" />
+
+    <Button
+        android:id="@+id/btn_food_two"
+        android:layout_width="165dp"
+        android:layout_height="56dp"
+        android:background="@drawable/edit_round_two"
+        android:fontFamily="@font/viga"
+        android:text="Rice Meals"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.351" />
+
+    <Button
+        android:id="@+id/btn_food_three"
+        android:layout_width="165dp"
+        android:layout_height="56dp"
+        android:background="@drawable/edit_round_two"
+        android:fontFamily="@font/viga"
+        android:text="Fries"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+    <Button
+        android:id="@+id/btn_food_four"
+        android:layout_width="165dp"
+        android:layout_height="56dp"
+        android:background="@drawable/edit_round_two"
+        android:fontFamily="@font/viga"
+        android:text="Drinks"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.647" />
+
+    <Button
+        android:id="@+id/btn_food_five"
+        android:layout_width="165dp"
+        android:layout_height="56dp"
+        android:background="@drawable/edit_round_two"
+        android:fontFamily="@font/viga"
+        android:text="Desserts"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.798" />
+
+</android.support.constraint.ConstraintLayout>

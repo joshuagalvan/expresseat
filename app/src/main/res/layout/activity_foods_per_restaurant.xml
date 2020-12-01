@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/food_bg"
+    android:backgroundTint="#CC393939"
+    android:backgroundTintMode="multiply">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="405dp"
+        android:layout_height="565dp"
+        android:layout_marginEnd="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="422dp"
+        android:layout_height="69dp"
+        android:background="@drawable/border"
+        android:backgroundTint="#CDFBFAB2"
+        android:backgroundTintMode="multiply"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.818"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/home_icon"
+            android:layout_width="69dp"
+            android:layout_height="69dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="2.5dp"
+            android:background="#00FFFFFF"
+            android:drawableTop="@drawable/ic_home_icon"
+            android:fontFamily="@font/viga"
+            android:gravity="center|top"
+            android:text="Home"
+            android:textAllCaps="false"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/offers_icon"
+            android:layout_width="70dp"
+            android:layout_height="69dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="2.5dp"
+            android:background="#00FFFFFF"
+            android:backgroundTint="#00FFFFFF"
+            android:clickable="true"
+            android:drawableTop="@drawable/offer_icon"
+            android:fontFamily="@font/viga"
+            android:gravity="center|top"
+            android:text="Offers"
+            android:textAllCaps="false"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/cart_icon"
+            android:layout_width="70dp"
+            android:layout_height="69dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="2.5dp"
+            android:background="#00FFFFFF"
+            android:backgroundTint="#00FFFFFF"
+            android:clickable="true"
+            android:drawableTop="@drawable/cart_icon"
+            android:fontFamily="@font/viga"
+            android:gravity="center|top"
+            android:text="Cart"
+            android:textAllCaps="false"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/borderfood">
+
+            <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                android:id="@+id/numberbutton"
+                android:layout_width="88dp"
+                android:layout_height="39dp"
+                android:layout_marginBottom="16dp"
+                app:backGroundColor="#FBFAB2"
+                app:finalNumber="100"
+                app:initialNumber="1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.423"
+                app:layout_constraintStart_toStartOf="parent"
+                app:textColor="#000000"
+                app:textSize="12sp">
+
+            </com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
+
+            <ImageView
+                android:id="@+id/cartimage"
+                android:layout_width="103dp"
+                android:layout_height="133dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/cartname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/viga"
+                android:text="Name"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/cartimage"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/cartprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/viga"
+                android:text="Price"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/cartname"
+                app:layout_constraintTop_toBottomOf="@+id/cartname" />
+
+            <Button
+                android:id="@+id/cartremove"
+                android:layout_width="91dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="84dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/getstarted_button_design"
+                android:fontFamily="@font/viga"
+                android:text="Remove"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/numberbutton" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

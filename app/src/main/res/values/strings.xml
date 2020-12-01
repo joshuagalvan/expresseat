@@ -1,0 +1,385 @@
+<resources>
+
+    <string name="app_name">Express Eat</string>
+    <string name="create_account"><u>Create Account</u></string>
+    <string name="latest_offers"><u>Latest Offers</u></string>
+    <string name="tracking_order"><u>Order Tracker</u></string>
+    <string name="sendEmail">Send Email</string>
+
+    <string-array name="mcdoburgers">
+        <item>Burger McDo</item>
+        <item>Cheese Burger</item>
+        <item>McChicken</item>
+        <item>Cheesy Burger McDo</item>
+        <item>Cheeseburger Deluxe</item>
+        <item>Quarter Pounder w/ Cheese</item>
+        <item>Double Big Mac</item>
+    </string-array>
+
+    <string-array name="mcdoburgerprices">
+        <item>45</item>
+        <item>125</item>
+        <item>175</item>
+        <item>110</item>
+        <item>155</item>
+        <item>200</item>
+        <item>275</item>
+    </string-array>
+
+    <string-array name="mcdoricemeals">
+        <item>Chicken Fillet Ala King</item>
+        <item>Chicken Fillet</item>
+        <item>1-pc. Chicken</item>
+        <item>2-pcs. Chicken</item>
+        <item>Chicken Katsu</item>
+        <item>1-pc. Mushroom Pepper Steak</item>
+    </string-array>
+
+    <string-array name="mcdoricemealsprices">
+        <item>86</item>
+        <item>50</item>
+        <item>99</item>
+        <item>120</item>
+        <item>112</item>
+        <item>90</item>
+    </string-array>
+
+    <string-array name="mcdofries">
+        <item>Regular Fries</item>
+        <item>Medium Fries</item>
+        <item>BFF Fries</item>
+        <item>Shake Shake Fries Cheese</item>
+        <item>Shake Shake Fries BBQ</item>
+    </string-array>
+
+    <string-array name="mcdofriesprices">
+        <item>35</item>
+        <item>55</item>
+        <item>134</item>
+        <item>65</item>
+        <item>65</item>
+    </string-array>
+
+    <string-array name="mcdodrinks">
+        <item>McFloat</item>
+        <item>Strawberry Shake</item>
+        <item>Wintermelon Milk Tea</item>
+        <item>Coke</item>
+        <item>Sprite</item>
+    </string-array>
+
+    <string-array name="mcdodrinksprices">
+        <item>42</item>
+        <item>55</item>
+        <item>75</item>
+        <item>35</item>
+        <item>35</item>
+    </string-array>
+
+    <string-array name="mcdodesserts">
+        <item>Caramel Sundae</item>
+        <item>Chocolate Sundae</item>
+        <item>Coffee McFlurry</item>
+        <item>McFlurry</item>
+
+    </string-array>
+
+    <string-array name="mcdodessertsprices">
+        <item>32</item>
+        <item>32</item>
+        <item>42</item>
+        <item>55</item>
+    </string-array>
+
+    <string-array name="jollibeeburgers">
+        <item>Aloha</item>
+        <item>Champ</item>
+        <item>Double Yumburger</item>
+        <item>Bacon Champ</item>
+        <item>Cheesy Yumburger</item>
+        <item>Bacon Cheesy Yumburger</item>
+    </string-array>
+
+    <string-array name="jollibeeburgersprices">
+        <item>85</item>
+        <item>185</item>
+        <item>110</item>
+        <item>55</item>
+        <item>200</item>
+        <item>116</item>
+    </string-array>
+
+    <string-array name="jollibeericemeals">
+        <item>2-pcs. Burger Steak</item>
+        <item>Ultimate Burger Steak</item>
+        <item>2-pcs. Chicken</item>
+        <item>1-pc. Chicken</item>
+    </string-array>
+
+    <string-array name="jollibeericemealsprices">
+        <item>90</item>
+        <item>185</item>
+        <item>120</item>
+        <item>100</item>
+    </string-array>
+
+    <string-array name="jollibeefries">
+        <item>Regular Fries</item>
+        <item>Medium Fries</item>
+        <item>Crisscut Fries</item>
+    </string-array>
+
+    <string-array name="jollibeefriesprices">
+        <item>47</item>
+        <item>55</item>
+        <item>72</item>
+    </string-array>
+
+    <string-array name="jollibeedrinks">
+        <item>Jollibee Shake</item>
+        <item>Pineapple Juice</item>
+        <item>Royal Float</item>
+        <item>Coke Float</item>
+        <item>Hot Chocolate</item>
+        <item>Coffee</item>
+    </string-array>
+
+    <string-array name="jollibeedrinksprices">
+        <item>50</item>
+        <item>25</item>
+        <item>45</item>
+        <item>45</item>
+        <item>40</item>
+        <item>33</item>
+    </string-array>
+
+    <string-array name="jollibeedesserts">
+        <item>Tuna Pie</item>
+        <item>Peach Mango Pie</item>
+        <item>Chocolate Sundae Twirl</item>
+        <item>Jollibee Mixins</item>
+    </string-array>
+
+    <string-array name="jollibeedessertsprices">
+        <item>33</item>
+        <item>33</item>
+        <item>33</item>
+        <item>45</item>
+    </string-array>
+
+    <string-array name="burgerkingburgers">
+        <item>Angry Whopper</item>
+        <item>Angry Whopper Jr.</item>
+        <item>4-Cheese Whopper Meal</item>
+        <item>Whopper</item>
+        <item>Pepperoni Bacon Whopper Jr.</item>
+    </string-array>
+
+    <string-array name="burgerkingburgersprices">
+        <item>185</item>
+        <item>200</item>
+        <item>99</item>
+        <item>155</item>
+        <item>159</item>
+    </string-array>
+
+    <string-array name="burgerkingspecials">
+        <item>Double Bacon King Jr. Meal</item>
+        <item>Single Bacon King Jr. Meal</item>
+        <item>Double BBQ Bacon King Jr. Meal</item>
+        <item>Single Bacon King</item>
+    </string-array>
+
+    <string-array name="burgerkingspecialsprices">
+        <item>125</item>
+        <item>155</item>
+        <item>125</item>
+        <item>129</item>
+    </string-array>
+
+    <string-array name="burgerkingdrinks">
+        <item>Coke</item>
+        <item>Minute Maid Orange</item>
+        <item>Bottled Water</item>
+    </string-array>
+
+    <string-array name="burgerkingdrinksprices">
+        <item>45</item>
+        <item>55</item>
+        <item>35</item>
+    </string-array>
+
+    <string-array name="popeyesburgers">
+        <item>Chicken French Quarter</item>
+        <item>Spicy Chicken Sandwich</item>
+        <item>Fish Burger</item>
+        <item>U.S. Spicy Chicken Sandwich</item>
+        <item>Chicken Burger</item>
+    </string-array>
+
+    <string-array name="popeyesburgersprices">
+        <item>124</item>
+        <item>138</item>
+        <item>110</item>
+        <item>175</item>
+        <item>102</item>
+    </string-array>
+
+    <string-array name="popeyescombodeals">
+        <item>6-pcs. Bundle A</item>
+        <item>12-pcs. Bundle B</item>
+        <item>2-pcs Chicken + Rice + Drink</item>
+        <item>1-pc Chicken + Rice + Drink</item>
+    </string-array>
+
+    <string-array name="popeyescombodealsprices">
+        <item>539</item>
+        <item>523</item>
+        <item>182</item>
+        <item>138</item>
+    </string-array>
+
+    <string-array name="popeyesfries">
+        <item>Regular Fries</item>
+        <item>Cheese Fries</item>
+    </string-array>
+
+    <string-array name="popeyesfriesprices">
+        <item>48</item>
+        <item>85</item>
+    </string-array>
+
+    <string-array name="popeyesdrinks">
+        <item>Coke</item>
+        <item>Sprite</item>
+        <item>Bottled Water</item>
+        <item>Dr. Pepper (Diet)</item>
+    </string-array>
+
+    <string-array name="popeyesdrinksprices">
+        <item>38</item>
+        <item>38</item>
+        <item>50</item>
+        <item>77</item>
+    </string-array>
+
+    <string-array name="wendysfambox">
+        <item>Fambox – Fried Chicken</item>
+        <item>Fambox - Burgers</item>
+        <item>Fambox – Bacon Mushroom (Good for 3)</item>
+        <item>Fambox – Bacon Mushroom (Good for 2)</item>
+    </string-array>
+
+    <string-array name="wendysfamboxprices">
+        <item>504</item>
+        <item>658</item>
+        <item>467</item>
+        <item>577</item>
+    </string-array>
+
+    <string-array name="wendyswhattabox">
+        <item>Whattabox A</item>
+        <item>Whattabox B</item>
+        <item>1-pc. Fried Chicken</item>
+    </string-array>
+
+    <string-array name="wendyswhattaboxprices">
+        <item>175</item>
+        <item>200</item>
+        <item>218</item>
+    </string-array>
+
+    <string-array name="wendysburgers">
+        <item>Steakhouse Cheeseburger</item>
+        <item>Hamburger Sandwich Cheese</item>
+        <item>Cheeseburger Deluxe (Combo)</item>
+        <item>Bacon Cheeseburger (Ala Carte) </item>
+        <item>Bacon Cheeseburger (Combo) </item>
+    </string-array>
+
+    <string-array name="wendysburgersprices">
+        <item>218</item>
+        <item>200</item>
+        <item>95</item>
+        <item>108</item>
+        <item>150</item>
+    </string-array>
+
+    <string-array name="wendysdrinks">
+        <item>Cola</item>
+        <item>Frappe</item>
+        <item>Sprite</item>
+        <item>Bottled Water </item>
+    </string-array>
+
+    <string-array name="wendysdrinksprices">
+        <item>39</item>
+        <item>58</item>
+        <item>39</item>
+        <item>30</item>
+    </string-array>
+
+    <string-array name="dominospizza">
+        <item>Pepperoni Pizza</item>
+        <item>Vegetarian Pizza</item>
+        <item>Cheese Mania</item>
+        <item>Ham and Cheese </item>
+        <item>Hawaiian Classic</item>
+    </string-array>
+
+    <string-array name="dominospizzaprices">
+        <item>434</item>
+        <item>550</item>
+        <item>430</item>
+        <item>500</item>
+        <item>510</item>
+    </string-array>
+
+    <string-array name="dominospasta">
+        <item>Cheesy Baked Macaroni</item>
+        <item>Italian Sausage Marinara</item>
+        <item>Chicken Carbonara</item>
+    </string-array>
+
+    <string-array name="dominospastaprices">
+        <item>150</item>
+        <item>250</item>
+        <item>215</item>
+    </string-array>
+
+    <string-array name="dominosdrinks">
+        <item>Coke</item>
+        <item>Sprite 1.5L</item>
+        <item>Sprite</item>
+        <item>Lychee Tea </item>
+        <item>Real Leaf Apple</item>
+    </string-array>
+
+    <string-array name="dominosdrinksprices">
+        <item>45</item>
+        <item>65</item>
+        <item>45</item>
+        <item>500</item>
+        <item>55</item>
+    </string-array>
+
+    <string-array name="dominosothers">
+        <item>Fried Chicken</item>
+        <item>Cheesy Chips</item>
+        <item>Garlic Bread</item>
+        <item>Calzone Solo Italian Sausage </item>
+        <item>Potato Wedges with Mayo dip </item>
+        <item>Loaded Wedges- Cheesy Bacon</item>
+    </string-array>
+
+    <string-array name="dominoothersprices">
+        <item>120</item>
+        <item>73</item>
+        <item>100</item>
+        <item>175</item>
+        <item>157</item>
+        <item>95</item>
+    </string-array>
+
+
+</resources>
