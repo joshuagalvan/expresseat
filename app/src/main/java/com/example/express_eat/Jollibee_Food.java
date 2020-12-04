@@ -50,7 +50,7 @@ public class Jollibee_Food extends AppCompatActivity {
                 break;
             case "drinks":
                 name = getResources().getStringArray(R.array.jollibeedrinks);
-                price = getResources().getStringArray(R.array.jollibeedrinks);
+                price = getResources().getStringArray(R.array.jollibeedrinksprices);
                 image =new int[] {R.drawable.jollibeehake,R.drawable.pineappleuicerinks,
                         R.drawable.royalloat,R.drawable.jollibeecokefloat,R.drawable.hothocolate,
                         R.drawable.coffee};
