@@ -2,6 +2,7 @@ package com.example.express_eat;
 
 import android.content.Context;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -18,7 +19,7 @@ import java.util.List;
 public class Summary extends AppCompatActivity {
 
     TextView totalprice, totalwithdelivery;
-    MyCart myCart;
+    final DatabaseHelper db = new DatabaseHelper(this);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,14 +27,15 @@ public class Summary extends AppCompatActivity {
         setContentView(R.layout.activity_summary);
         Button send = (Button) findViewById(R.id.sendorder);
         RadioGroup radioGroup = (RadioGroup) findViewById(R.id.RGroup);
-
-        DatabaseHelper db = new DatabaseHelper(this);
         totalprice = findViewById(R.id.subtotal);
         totalwithdelivery = findViewById(R.id.total);
         int feewithdelivery = 0;
+
+
         send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                db.deleteAllFood();
                 Intent intent = new Intent(Summary.this, OrderDone.class);
                 startActivity(intent);
             }
@@ -44,7 +46,6 @@ public class Summary extends AppCompatActivity {
         for(Food food: cart) {
             total += (Integer.parseInt(food.getFoodPrice()));
         }
-
 
         totalprice.setText("₱" + String.valueOf(total) + ".00");
 
