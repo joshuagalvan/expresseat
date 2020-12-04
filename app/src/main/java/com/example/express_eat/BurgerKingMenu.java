@@ -41,7 +41,7 @@ public class BurgerKingMenu extends AppCompatActivity implements View.OnClickLis
     @Override
     public void onClick(View v) {
 
-        Intent intent = new Intent(this,BurgerKing_Food.class);
+        Intent intent = new Intent(this, BurgerKing_Food.class);
         switch(v.getId()){
             case R.id.btn_food_one:
                 intent.putExtra("CATEGORY", "burger");

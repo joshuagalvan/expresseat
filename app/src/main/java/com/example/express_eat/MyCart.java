@@ -20,15 +20,10 @@ import java.util.List;
 
 public class MyCart extends AppCompatActivity {
 
-    private SQLiteDatabase sqLiteDatabase;
-
+    SQLiteDatabase sqLiteDatabase;
     RecyclerView recyclerView;
-    TextView totalPrice;
 
-    /*int[] images = {R.drawable.loadededgesheesyacon, R.drawable.loadededgesheesyacon, R.drawable.loadededgesheesyacon,
-            R.drawable.loadededgesheesyacon, R.drawable.loadededgesheesyacon, R.drawable.loadededgesheesyacon, R.drawable.loadededgesheesyacon,
-            R.drawable.loadededgesheesyacon, R.drawable.loadededgesheesyacon};*/
-
+    int images[];
     List<Food> foodArrayList = new ArrayList<>();
 
 
@@ -37,8 +32,30 @@ public class MyCart extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_cart);
 
+        images = new int[]{R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,
+                R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,
+                R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,
+                R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,
+                R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,
+                R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,
+                R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,
+                R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,
+                R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,
+                R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,
+                R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,
+                R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,
+                R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,
+                R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,
+                R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,
+                R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,
+                R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,
+                R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,
+                R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,
+                R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,};
+
         DatabaseHelper db = new DatabaseHelper(this);
         sqLiteDatabase = db.getReadableDatabase();
+        Button add = (Button) findViewById(R.id.addtocart);
         Button proceed = (Button) findViewById(R.id.proceedbtn);
         proceed.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,6 +65,7 @@ public class MyCart extends AppCompatActivity {
             }
         });
 
+
         List<Food> foodList = db.getAllFood();
         for(Food food: foodList) {
             foodArrayList.add(food);
@@ -55,7 +73,7 @@ public class MyCart extends AppCompatActivity {
 
         Log.d("Size", String.valueOf(foodArrayList.size()));
         recyclerView = findViewById(R.id.cartrecyler);
-        CartAdapter myAdapter = new CartAdapter(this, foodArrayList);
+        CartAdapter myAdapter = new CartAdapter(this, foodArrayList, images);
         recyclerView.setAdapter(myAdapter);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));

@@ -21,12 +21,12 @@ import java.util.List;
 public class CartAdapter extends RecyclerView.Adapter<CartAdapter.CartViewHolder>{
 
     List<Food> foodList;
-    //int images[];
+    int images[];
     Context context;
 
-    public CartAdapter(Context ctx, List<Food> food /*,int [] images*/){
+    public CartAdapter(Context ctx, List<Food> food ,int [] images){
         context = ctx;
-        //this.images = images;
+        this.images = images;
         foodList = food;
     }
 
@@ -43,8 +43,7 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.CartViewHolder
         Food food = foodList.get(position);
         holder.foodText.setText(food.getFoodName());
         holder.foodPrice.setText("₱" + food.getFoodPrice()+ ".00");
-
-        //holder.foodImage.setImageResource(images[food.getFoodImage()]);
+        holder.foodImage.setImageResource(images[position]);
     }
 
     @Override
@@ -56,7 +55,6 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.CartViewHolder
         ImageView foodImage;
         Button delete;
         TextView foodText,foodPrice;
-        ElegantNumberButton btn_quantity;
 
         public CartViewHolder(@NonNull View itemView){
             super(itemView);
@@ -64,7 +62,6 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.CartViewHolder
             foodText = itemView.findViewById(R.id.cartname);
             foodPrice = itemView.findViewById(R.id.cartprice);
             delete = itemView.findViewById(R.id.cartremove);
-            btn_quantity = itemView.findViewById(R.id.numberbutton);
 
             delete.setOnClickListener(new View.OnClickListener(){
                 @Override
