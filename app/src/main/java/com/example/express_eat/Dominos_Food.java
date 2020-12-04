@@ -66,7 +66,7 @@ public class Dominos_Food extends AppCompatActivity {
         }
         cart = findViewById(R.id.cart_icon);
         home =  findViewById(R.id.home_icon);
-        offer =  findViewById(R.id.offers_icon);
+
         cart.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -81,12 +81,7 @@ public class Dominos_Food extends AppCompatActivity {
                 return_to_restaurants();
             }
         });
-        offer.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openOffers();
-            }
-        });
+
         recyclerView = findViewById(R.id.recyclerView);
         FoodAdapter foodAdapter = new FoodAdapter(this, name, price, image);
         recyclerView.setAdapter(foodAdapter);

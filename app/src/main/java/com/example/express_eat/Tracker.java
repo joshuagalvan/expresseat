@@ -104,16 +104,10 @@ public class Tracker extends AppCompatActivity {
         v_order_pickup = findViewById(R.id.view_order_pickup);
 
         timer();
-        cart = findViewById(R.id.cart_icon);
-        home =  findViewById(R.id.home_icon);
-        offer =  findViewById(R.id.offers_icon);
-        cart.setOnClickListener(new View.OnClickListener() {
 
-            @Override
-            public void onClick(View view) {
-                openCart();
-            }
-        });
+        home =  findViewById(R.id.home_icon);
+
+
         home.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -121,11 +115,6 @@ public class Tracker extends AppCompatActivity {
                 return_to_restaurants();
             }
         });
-        offer.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openOffers();
-            }
-        });
+
     }
 }

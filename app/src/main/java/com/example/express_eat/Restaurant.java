@@ -160,7 +160,6 @@ public class Restaurant extends AppCompatActivity {
 
         home = (Button) findViewById(R.id.home_icon);
         cart = (Button) findViewById(R.id.cart_icon);
-        offer = (Button) findViewById(R.id.offers_icon);
         settings = (ImageView) findViewById(R.id.menu_icon);
         mcdo = (CardView) findViewById(R.id.crd_mcdo) ;
         jollibee = (CardView) findViewById(R.id.crd_jollibee) ;
@@ -180,12 +179,6 @@ public class Restaurant extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 openCart();
-            }
-        });
-        offer.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openOffers();
             }
         });
         settings.setOnClickListener(new View.OnClickListener() {

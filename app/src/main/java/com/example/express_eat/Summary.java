@@ -1,5 +1,6 @@
 package com.example.express_eat;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -8,6 +9,7 @@ import android.widget.Button;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
+import com.example.express_eat.adapter.CartAdapter;
 import com.example.express_eat.database.DatabaseHelper;
 import com.example.express_eat.model.Food;
 
@@ -16,6 +18,7 @@ import java.util.List;
 public class Summary extends AppCompatActivity {
 
     TextView totalprice, totalwithdelivery;
+    MyCart myCart;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

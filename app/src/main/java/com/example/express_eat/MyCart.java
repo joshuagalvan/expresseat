@@ -78,4 +78,9 @@ public class MyCart extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
+
+    public void clear() {
+        int size = foodArrayList.size();
+        foodArrayList.clear();
+    }
 }
