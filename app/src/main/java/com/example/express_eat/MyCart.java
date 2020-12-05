@@ -32,7 +32,7 @@ public class MyCart extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_cart);
 
-        images = new int[]{R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,
+        images = new int[]{R.drawable.exeatlogo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,
                 R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,
                 R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,
                 R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,
@@ -77,5 +77,10 @@ public class MyCart extends AppCompatActivity {
         recyclerView.setAdapter(myAdapter);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+        if (myAdapter.getItemCount() == 0)
+        {
+            setContentView(R.layout.activity_my_order_empty);
+        }
     }
 }

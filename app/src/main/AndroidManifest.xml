@@ -66,9 +66,6 @@
             android:name=".Summary"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".MyOrderEmpty"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name=".Tracker"
             android:theme="@style/AppTheme.NoActionBar" />
 
