@@ -32,7 +32,7 @@ public class MyCart extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_cart);
 
-        images = new int[]{R.drawable.exeatlogo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,
+        images = new int[]{R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,
                 R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,
                 R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,
                 R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,
