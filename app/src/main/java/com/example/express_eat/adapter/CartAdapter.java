@@ -21,12 +21,10 @@ import java.util.List;
 public class CartAdapter extends RecyclerView.Adapter<CartAdapter.CartViewHolder>{
 
     List<Food> foodList;
-    int images[];
     Context context;
 
-    public CartAdapter(Context ctx, List<Food> food ,int [] images){
+    public CartAdapter(Context ctx, List<Food> food){
         context = ctx;
-        this.images = images;
         foodList = food;
     }
 
@@ -43,7 +41,6 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.CartViewHolder
         Food food = foodList.get(position);
         holder.foodText.setText(food.getFoodName());
         holder.foodPrice.setText("₱" + food.getFoodPrice()+ ".00");
-        holder.foodImage.setImageResource(images[position]);
     }
 
     @Override

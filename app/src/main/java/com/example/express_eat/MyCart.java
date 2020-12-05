@@ -23,7 +23,6 @@ public class MyCart extends AppCompatActivity {
     SQLiteDatabase sqLiteDatabase;
     RecyclerView recyclerView;
 
-    int images[];
     List<Food> foodArrayList = new ArrayList<>();
 
 
@@ -32,30 +31,9 @@ public class MyCart extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_cart);
 
-        images = new int[]{R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,
-                R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,
-                R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,
-                R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,
-                R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,
-                R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,
-                R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,
-                R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,
-                R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,
-                R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,
-                R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,
-                R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,
-                R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,
-                R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,
-                R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,
-                R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,
-                R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,
-                R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,
-                R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,
-                R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,R.drawable.expresseat_logo,};
 
         DatabaseHelper db = new DatabaseHelper(this);
         sqLiteDatabase = db.getReadableDatabase();
-        Button add = (Button) findViewById(R.id.addtocart);
         Button proceed = (Button) findViewById(R.id.proceedbtn);
         proceed.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,7 +51,7 @@ public class MyCart extends AppCompatActivity {
 
         Log.d("Size", String.valueOf(foodArrayList.size()));
         recyclerView = findViewById(R.id.cartrecyler);
-        CartAdapter myAdapter = new CartAdapter(this, foodArrayList, images);
+        CartAdapter myAdapter = new CartAdapter(this, foodArrayList);
         recyclerView.setAdapter(myAdapter);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
