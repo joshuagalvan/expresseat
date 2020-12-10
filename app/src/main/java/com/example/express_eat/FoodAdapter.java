@@ -13,6 +13,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.express_eat.database.DatabaseHelper;
 import com.example.express_eat.model.Food;
@@ -84,6 +85,8 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.MyViewHolder> 
                 @Override
                 public void onClick(View view) {
                     db.addFood(new Food(data1[getAdapterPosition()], data2[getAdapterPosition()]));
+                    Toast.makeText(context, "Item has been added!" +
+                            "", Toast.LENGTH_SHORT).show();
                 }
             });
         }

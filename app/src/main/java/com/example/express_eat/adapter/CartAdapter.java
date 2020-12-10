@@ -10,9 +10,12 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.cepheuen.elegantnumberbutton.view.ElegantNumberButton;
+import com.example.express_eat.MyCart;
 import com.example.express_eat.R;
+import com.example.express_eat.Tracker;
 import com.example.express_eat.database.DatabaseHelper;
 import com.example.express_eat.model.Food;
 
@@ -67,6 +70,8 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.CartViewHolder
                     Food food = foodList.get(position);
                     DatabaseHelper db = new DatabaseHelper(context);
                     db.deleteFood(food.getId());
+                    Toast.makeText(context, "Item has been removed!" +
+                            "", Toast.LENGTH_SHORT).show();
                     foodList.remove(getAdapterPosition());
                     notifyDataSetChanged();
                 }
